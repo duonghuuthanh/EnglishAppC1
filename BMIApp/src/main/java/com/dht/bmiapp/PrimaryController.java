@@ -1,5 +1,6 @@
 package com.dht.bmiapp;
 
+import com.dht.service.BmiService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -13,8 +14,12 @@ public class PrimaryController {
     public void bmiHandler(ActionEvent evt) {
         double height = Double.parseDouble(this.txtHeight.getText());
         double weight = Double.parseDouble(this.txtWeight.getText());
-        double bmi = weight / Math.pow(height, 2);
         
-        this.lblResult.setText("Gia tri = " + bmi);
+        BmiService b = new BmiService(height, weight);
+        
+        if (b.getLabel() == 0)
+            this.lblResult.setText("Bình thường");
+        else
+            this.lblResult.setText("Béo phì");
     }
 }
