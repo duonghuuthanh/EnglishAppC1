@@ -16,15 +16,15 @@ import org.junit.jupiter.api.Test;
  * @author admin
  */
 public class CategoryTC {
-    @Test
-    public void testCate() {
-        try {
-            CategoryService.getCategories();
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(CategoryTC.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(CategoryTC.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+//    @Test
+//    public void testCate() {
+//        try {
+//            CategoryService.getCategories();
+//        } catch (ClassNotFoundException ex) {
+//            Logger.getLogger(CategoryTC.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(CategoryTC.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
 //    
 }

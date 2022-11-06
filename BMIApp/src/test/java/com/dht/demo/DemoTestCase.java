@@ -20,6 +20,7 @@ import org.junit.jupiter.api.Test;
  * @author admin
  */
 public class DemoTestCase {
+   
     @BeforeAll
     public static void beforeAll() {
         System.out.println("BEFORE ALL");
@@ -77,12 +78,12 @@ public class DemoTestCase {
         Assertions.assertEquals(expected, actual);
     }
     
-    @Test
-    public void test04() {
-        Assertions.assertThrows(ArithmeticException.class, () -> {
-            MyPower.power(10, -200);
-        });
-    }
+//    @Test
+//    public void test04() {
+//        Assertions.assertThrows(ArithmeticException.class, () -> {
+//            MyPower.power(10, -200);
+//        });
+//    }
     
     @Test
     public void test05() {
